@@ -274,7 +274,7 @@ def mov_baixas():
     cnx.commit()
 
     cur_dest.execute(
-        "update parampatri set correlacao_pcasp_ok  = 'S', exer_enc  = null")
+        """update parampatri set correlacao_pcasp_ok  = 'S', exer_enc  = null""")
     cnx.commit()
 
     cur_dest.execute(
